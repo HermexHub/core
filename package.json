@@ -1,0 +1,25 @@
+{
+	"name": "@hermex/core",
+	"version": "1.0.0",
+	"description": "Core utilities and shared configuration for Hermex",
+	"type": "commonjs",
+	"publishConfig": {
+		"access": "public"
+	},
+	"license": "ISC",
+	"author": "",
+	"peerDependencies": {
+		"prettier": "^3.0.0"
+	},
+	"dependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2"
+	},
+	"exports": {
+		"./prettier": "./src/prettier.config.mjs",
+		"./tsconfig": "./src/tsconfig.base.json",
+		"./tsconfig.base.json": "./src/tsconfig.base.json"
+	},
+	"files": [
+		"src"
+	]
+}
