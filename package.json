@@ -1,6 +1,6 @@
 {
 	"name": "@hermex/core",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Core utilities and shared configuration for Hermex",
 	"type": "commonjs",
 	"publishConfig": {
@@ -14,14 +14,13 @@
 	"dependencies": {
 		"@trivago/prettier-plugin-sort-imports": "^5.2.2"
 	},
-	"tsconfig": "./tsconfig.json",
+	"tsconfig": "./tsconfig.base.json",
 	"exports": {
 		"./prettier": "./src/prettier.config.mjs",
-		"./tsconfig": "./tsconfig.json",
-		"./tsconfig.json": "./tsconfig.json"
+		"./tsconfig": "./tsconfig.base.json"
 	},
 	"files": [
 		"src",
-		"tsconfig.json"
+		"tsconfig.base.json"
 	]
 }
