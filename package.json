@@ -1,6 +1,6 @@
 {
 	"name": "@hermex/core",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Core utilities and shared configuration for Hermex",
 	"type": "commonjs",
 	"publishConfig": {
