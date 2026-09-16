@@ -1,8 +1,10 @@
 {
 	"name": "@hermex/core",
-	"version": "1.0.4",
+	"version": "1.1.0",
 	"description": "Core utilities and shared configuration for Hermex",
 	"type": "commonjs",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -14,19 +16,49 @@
 		"prepublishOnly": "tsc"
 	},
 	"peerDependencies": {
-		"prettier": "^3.0.0"
+		"prettier": "^3.0.0",
+		"@nestjs/common": "^10.0.0 || ^11.0.0",
+		"@grpc/grpc-js": "^1.0.0"
+	},
+	"peerDependenciesMeta": {
+		"prettier": {
+			"optional": true
+		},
+		"@nestjs/common": {
+			"optional": true
+		},
+		"@grpc/grpc-js": {
+			"optional": true
+		}
 	},
 	"dependencies": {
 		"@trivago/prettier-plugin-sort-imports": "^5.2.2"
 	},
 	"devDependencies": {
+		"@grpc/grpc-js": "^1.12.6",
+		"@nestjs/common": "^11.0.11",
+		"@types/node": "^22.13.9",
 		"prettier": "^3.5.3",
+		"reflect-metadata": "^0.2.2",
+		"rxjs": "^7.8.2",
 		"typescript": "^5.8.2"
 	},
 	"tsconfig": "./tsconfig.base.json",
 	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		},
 		"./prettier": "./dist/prettier.config.js",
-		"./tsconfig": "./tsconfig.base.json"
+		"./tsconfig": "./tsconfig.base.json",
+		"./decorators": {
+			"types": "./dist/decorators/index.d.ts",
+			"default": "./dist/decorators/index.js"
+		},
+		"./constants": {
+			"types": "./dist/constants/index.d.ts",
+			"default": "./dist/constants/index.js"
+		}
 	},
 	"files": [
 		"dist",
