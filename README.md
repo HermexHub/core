@@ -6,7 +6,7 @@
 [ **English** ] &nbsp;•&nbsp; [ [Українська](README.ua.md) ] &nbsp;•&nbsp; [ [System Overview](../overview/README.md) ] &nbsp;•&nbsp; [ [NPM Package](https://www.npmjs.com/package/@hermex/core) ]
 
 <p align="center">
-  @hermex/core (v1.2.0) &bull; Pino JSON &bull; AsyncLocalStorage &bull; Auto-Publish CI/CD
+  @hermex/core (v1.2.1) &bull; Pino JSON &bull; AsyncLocalStorage &bull; Auto-Publish CI/CD
 </p>
 
 </div>
